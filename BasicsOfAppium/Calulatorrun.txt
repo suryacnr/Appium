@@ -1,0 +1,11 @@
+Desiredcapabilities dc = new Desiredcapabilities();
+dc.setCapabiliity(MobileCapabilityType.Automation_Name,"Appium");
+dc.setCapabiliity(MobileCapabilityType.PLATFORM_NAME,"Appium");
+dc.setCapabiliity(MobileCapabilityType.PLATFORM_Version,"Appium");
+dc.setCapabiliity(MobileCapabilityType.DEVICE_NAME,"Appium");(OR)UDID
+dc.setCapabiliity(MobileCapabilityType.APP,"Appium");
+dc.setCapability("appPackage","com.sololearn");
+dc.setCapability("appActivity","com.sololearn.app.ui.launcher.LauncherActivity");
+URL url = new URL ("http://127.0.0.1:4723/wd/hub");
+AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(url,dc);
+
