@@ -1,0 +1,17 @@
+Still Now we have used the way to findelelement are comman for both android and ios
+there is a sperate class called androiUIAutomater
+
+driver.findElementByAndroidUIAutomator('new UiSelector().text('APP')').click();
+driver.findElement(MobileBy.AndroidUIAutomator(''));
+
+driver.findElementsByAndroidUIAutomator('');
+driver.findElements(MobileBy.AndroidUIAutomator(''));
+
+
+//
+driver.findElementByAndroidUIAutomator('new UiSelector().text('APP')').click();//using text value
+driver.findElementByAndroidUIAutomator('new UiSelector().textStartsWith('APP')').click(); //using start with
+driver.findElementByAndroidUIAutomator('new UiSelector().textContains('APP')').click(); // using contains
+driver.findElementByAndroidUIAutomator('new UiSelector().textMatches('.*APP')').click(); //regulare experastion
+
+
