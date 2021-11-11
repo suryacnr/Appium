@@ -1,0 +1,10 @@
+driver.findElementById('');
+driver.findElementByAccessibilityId("2. Dark theam").click();
+//textbox
+driver.findElementByAccessibilityId("2. Dark theam").sendKeys("");
+
+//checkBox
+driver.findElementByAccessibilityId("2. Dark theam").click();
+
+//radio button
+driver.findElementByAccessibilityId("2. Dark theam").click();
