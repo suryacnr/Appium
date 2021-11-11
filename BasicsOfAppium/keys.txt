@@ -1,0 +1,10 @@
+//handle keys outside the app
+driver.presskey(new keyEvent(AndroidKey.BACK));
+driver.presskey(new keyEvent(AndroidKey.HOME));
+driver.presskey(new keyEvent(AndroidKey.APP_SWITCH));
+driver.presskey(new keyEvent(AndroidKey.ENTER));
+driver.presskey(new keyEvent(AndroidKey.DPAD_UP));
+driver.presskey(new keyEvent(AndroidKey.DPAD_DOWN));
+driver.presskey(new keyEvent(AndroidKey.Page_UP));
+driver.presskey(new keyEvent(AndroidKey.KEYCODE_ZOOM_IN));
+driver.presskey(new keyEvent(AndroidKey.KEYCODE_ZOOM_OUT));
