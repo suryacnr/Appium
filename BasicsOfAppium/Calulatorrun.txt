@@ -8,4 +8,14 @@ dc.setCapability("appPackage","com.sololearn");
 dc.setCapability("appActivity","com.sololearn.app.ui.launcher.LauncherActivity");
 URL url = new URL ("http://127.0.0.1:4723/wd/hub");
 AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(url,dc);
-
+driver.findElementByID("").click();
+driver.findElementByID("").click();
+driver.findElementByID("").click();
+driver.findElementByID("").click();
+WebElement element=driver.findElementByID("").getText();
+if(element.equals("10")){
+syso("");
+} else{
+syso("");
+}
+driver.quit();
