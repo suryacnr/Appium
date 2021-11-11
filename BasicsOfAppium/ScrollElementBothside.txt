@@ -1,0 +1,16 @@
+//progresbar Horizontall scrolling
+WebElement element =driver.findElementById('');
+TouchAction action = new TouchAction(MobileDriver) driver);
+//255,255 are x and y codinates
+action.longPress(ElementOption.element(element).moveTo(ElementOption.elment(element, 255,255).release().perform();
+
+
+//verticall scrolling
+driver.findElementById('').get(10).click();
+//capture all the list items
+AndroidElement list = (AandroidElement) driver.findElementById('');
+//scroll down till we get the element
+MobileElement mob = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
+                      "new UiScrollable(new UiSelector()).scrollIntoView("+"new UiSelector().descrption(\"Switches\"));"));
+Syso(mob.getLocation());
+mob.click();
