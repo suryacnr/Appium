@@ -1,0 +1,31 @@
+
+//Handle Switches
+driver.findElementById("").click();
+String val =driver.findElementByID("").getText();
+if(val.equals("status ON"){
+syso("pass");
+} els{
+syso("");
+}
+
+
+//Drag&Drop
+//navigation
+driver.findElementById("").click();
+//if resources id matches multiple ids than use get method 
+Weblement source =driver.findElementsById("").get(2);//which is basicaly index value
+Weblement destination =driver.findElementsById("").get(3);
+//To drag and drop we need to use TouchAction class
+TouchAction action = new TouchAction(MobileDriver)driver);// mobiledriver is typecasted
+//drag&drop
+action.longPress(ElementOption.element(source)).moveTo(ElementOption.element(destination)).relase.perform();
+//or you can use loop to find 
+//eg:
+int totalsize=driver.findElementsById("").size();
+for(int i; i<=totalsize; i++){
+
+  String element =driver.findElementById("").getText();
+  if(element.equalignorecase("test){
+  element.click();
+  }
+
