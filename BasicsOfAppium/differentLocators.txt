@@ -1,0 +1,16 @@
+//custome xpath #1
+//tagname[@attribute ='value']
+//tagname[cantains(@attrubute,'partialvalue')]
+//tagname[starts-with(@text,'startvalue')]
+//class name is the tagname
+//MobileBy.xpath ,//MobileBy.id,//MobileBy.class,//MobileBy.AccessibilityId('');
+
+
+driver.findElement(MObileBy.xpath("//android.terminal[@text='App'])).click();
+driver.manage().timeout().implicitlywait(10,TimeUnit.offsec);
+driver.findElement(MObileBy.xpath("//android.terminal[@text='AndroidAPP'])).click();
+List<AndroidElement> list=driver.findElement(MObileBy.xpath("//android.terminal[@text='AndroidAPP']));
+for(AndroidElement iteam: list){
+syso(iteam.getText());
+
+}
