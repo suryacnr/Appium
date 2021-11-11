@@ -9,8 +9,18 @@
 driver.findElement(MObileBy.xpath("//android.terminal[@text='App'])).click();
 driver.manage().timeout().implicitlywait(10,TimeUnit.offsec);
 driver.findElement(MObileBy.xpath("//android.terminal[@text='AndroidAPP'])).click();
-List<AndroidElement> list=driver.findElement(MObileBy.xpath("//android.terminal[@text='AndroidAPP']));
+List<AndroidElement> list=driver.findElements(MObileBy.xpath("//android.terminal[@text='AndroidAPP']));
 for(AndroidElement iteam: list){
 syso(iteam.getText());
 
+}
+//if there is only class attribte how to handle that element
+driver.findElement(MobileBy.xpath('//classname[1]'));
+or
+driver.findElements(MobileBy.className('//classname')).get(2).click();
+or
+List<AndroidElement> list=driver.findElements(MObileBy.xpath("//android.terminal[@text='AndroidAPP']));
+for(int i=0; i<=list.size();i++){
+if(list.get(i).getText().contentEquals("View"))
+  list.get(i).click();
 }
