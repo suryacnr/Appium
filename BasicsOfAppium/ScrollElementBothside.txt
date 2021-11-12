@@ -1,3 +1,24 @@
+//uiScrollable
+getChildByText()
+getChildByDescription()
+scrollIntoView()
+
+//getChildByText
+driver.findElement(MobileBy.AndroidUIAutomator(" new UiScrollable(new UiSelector().resourceID("")).getChildByText(new UiSelector().classname(".."),"Web")")); // in resourcesid you should find scrollable containter and "web" denotes actual value of text
+
+//getChildByDescription()
+driver.findElement(MobileBy.AndroidUIAutomator(" new UiScrollable(new UiSelector().resourceID("")).getChildByDescription(new UiSelector().classname(".."),"Web")"));//"WEB " denotes contant desc value the only change for child and decription is this.
+
+//scrollIntoView()
+driver.findElement(MobileBy.AndroidUIAutomator(" new UiScrollable(new UiSelector().resourceID("")).scrollIntoView(new UiSelector().text(''))"));//not only using text you can use text startwith and contains and also description
+
+
+//HorizontalList()
+driver.findElement(MobileBy.AndroidUIAutomator(" new UiScrollable(new UiSelector().resourceID("")).setAsHorizontaList().scrollIntoView(new UiSelector().text(''))")); 
+//To scroll to Horizontal you need to set the method before scrollIntoView as setAsHorizontaList()
+
+
+
 //progresbar Horizontall scrolling
 WebElement element =driver.findElementById('');
 TouchAction action = new TouchAction(MobileDriver) driver);
