@@ -1,0 +1,24 @@
+click on drop down value
+driver.findElement(MobileBy.AndroidUIAutomator(new UiSelector().text('')).click();
+//you can handle drop down in two ways 
+driver.findElement(MobileBy.AndroidUIAutomator(new UiSelector().text('')).click();
+by usuval way find the element and click on it (OR)
+//yousing for loop
+List<AndroidElement> list =driver.findElement(Mobile.AndroidUIAutomator(new UiSelector().text('')).size();
+for(AndroidElement e: list){
+  Stirng val= e.getText();
+  if(val.equals('sometext'){
+  e.click();
+  break();
+  syso('test step pass');
+  } else{
+ syso('test step fail');
+ }
+}
+ 
+//Toast mesg
+the class name of the toast msg would be
+android.widget.Toast[1]
+String text =driver.findElement(MobileBy.xpath('android.widget.Toast[1]')).getText();
+syso(text);
+Assert.assertequals(expected,Actual);
