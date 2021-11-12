@@ -1,0 +1,20 @@
+//Tap is simular to click action you can use any one of them
+AndroidElement view =driver.findElement(MobileBy.xpath('');
+TouchAction action = new TouchAction(driver);
+action.Tap(tapOptions().withElement(element(view))).perform();
+//second method for tap
+
+Point point = views.getLoction();
+action.Tap(point(point.x+2,point.y+2)).perform(); //+2 denots pixel if we dont give +2 it will tap on borders
+
+//How to Handle Long press
+
+AndroidElement view =driver.findElement(MobileBy.xpath('');
+TouchAction action = new TouchAction(driver);
+action.longPress(longPressOptions().withElement(elemnt(view))).withDuration(ofSeconds(2))).release().perform(); 
+//we need to manualy import longpressOptions and we need to manualy import ofesconds
+import static java.time.Duration.ofSeconds;
+
+
+
+
