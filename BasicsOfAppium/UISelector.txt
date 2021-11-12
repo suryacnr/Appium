@@ -8,10 +8,18 @@ driver.findElementsByAndroidUIAutomator('');
 driver.findElements(MobileBy.AndroidUIAutomator(''));
 
 
-//
+//Using text
 driver.findElementByAndroidUIAutomator('new UiSelector().text('APP')').click();//using text value
 driver.findElementByAndroidUIAutomator('new UiSelector().textStartsWith('APP')').click(); //using start with
 driver.findElementByAndroidUIAutomator('new UiSelector().textContains('APP')').click(); // using contains
 driver.findElementByAndroidUIAutomator('new UiSelector().textMatches('.*APP')').click(); //regulare experastion
 
+//using contant des
+driver.findElementByAndroidUIAutomator('new UiSelector().description('APP')').click();//the full value of conatant des
+driver.findElementByAndroidUIAutomator('new UiSelector().descriptionContains('APP')').click(); //using contains
+driver.findElementByAndroidUIAutomator('new UiSelector().descriptionStartsWith('APP')').click(); //using start with
+driver.findElementByAndroidUIAutomator('new UiSelector().descriptionMatches('.*APP')').click(); //regulare experastion
 
+//resources Id
+driver.findElementByAndroidUIAutomator('new UiSelector().resourceId('APP')').click(); //using resources id
+driver.findElementByAndroidUIAutomator('new UiSelector().resourceIdMatches('APP')').click(); //using resources id Matches
