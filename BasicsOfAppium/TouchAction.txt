@@ -15,6 +15,10 @@ action.longPress(longPressOptions().withElement(elemnt(view))).withDuration(ofSe
 //we need to manualy import longpressOptions and we need to manualy import ofesconds
 import static java.time.Duration.ofSeconds;
 
+//swipe 
+AndroidElement first =driver.findElement(MobileBy.xpath('');
+AndroidElement last =driver.findElement(MobileBy.xpath('');
 
+action.longPress(longPressOption().withElement(element(first)).withDuration(ofSeconds(2)).moveTo(element(last)).realse().perform());
 
 
